@@ -1,0 +1,25 @@
+.slider .track {
+    -fx-pref-height: 20px;
+    -fx-background-image: url("/assets/img/ornament.png");
+    -fx-background-repeat: repeat-x;
+    -fx-background-color: transparent;
+    -fx-opacity: 1;
+}
+
+.slider .thumb {
+    -fx-pref-height: 30;
+    -fx-prefer-width: 30;
+    -fx-background-color: transparent;
+
+}
+.label {
+    -fx-text-fill: ivory;
+    -fx-font-family: "Algerian", fantasy;
+    -fx-font-size: 2em;
+    -fx-border-radius: 25px;
+    -fx-border-color: ivory;
+    -fx-border-style: solid ;
+    -fx-background-color: black;
+    -fx-border-width: 2px;
+    -fx-background-radius: 25px;
+}

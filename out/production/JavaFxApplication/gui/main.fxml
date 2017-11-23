@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Point3D?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.GaussianBlur?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+
+<Pane fx:id="scene" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" stylesheets="@main.css" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.Controller">
+   <children>
+      <ImageView fx:id="bg" fitHeight="400.0" fitWidth="600.0" layoutX="1.0" layoutY="1.0" pickOnBounds="true">
+         <image>
+            <Image url="@../assets/img/300270-background-pattern-dark-black.jpg" />
+         </image></ImageView>
+      <ImageView fx:id="table" fitHeight="345.0" fitWidth="600.0" layoutX="-1.0" layoutY="-1.0" nodeOrientation="INHERIT" pickOnBounds="true">
+         <image>
+            <Image url="@../assets/img/table.png" />
+         </image></ImageView>
+      <ImageView fx:id="bb" fitHeight="42.0" fitWidth="44.0" layoutX="221.0" layoutY="66.0" pickOnBounds="true">
+         <image>
+            <Image url="@../assets/img/bb.png" />
+         </image>
+         <effect>
+            <DropShadow />
+         </effect>
+      </ImageView>
+      <ImageView fx:id="sb" fitHeight="42.0" fitWidth="44.0" layoutX="306.0" layoutY="73.0" pickOnBounds="true">
+         <image>
+            <Image url="@../assets/img/sb.png" />
+         </image>
+         <effect>
+            <DropShadow />
+         </effect>
+      </ImageView>
+      <Button fx:id="bR" layoutX="534.0" layoutY="361.0" mnemonicParsing="false" onAction="#raise" text="Raise" textAlignment="CENTER" />
+      <Button fx:id="bC" layoutX="471.0" layoutY="361.0" mnemonicParsing="false" text="Call" />
+      <Button fx:id="bF" layoutX="402.0" layoutY="361.0" mnemonicParsing="false" text="Fold" />
+      <Slider fx:id="slider" layoutX="99.0" layoutY="354.0" prefHeight="30.0" prefWidth="210.0" />
+      <ImageView fx:id="slidOl" fitHeight="42.0" fitWidth="55.0" layoutX="14.0" layoutY="340.0" pickOnBounds="true">
+         <image>
+            <Image url="@../assets/img/csm_ornament9_e76919f620.png" />
+         </image>
+         <effect>
+            <GaussianBlur radius="0.5" />
+         </effect>
+      </ImageView>
+      <ImageView fx:id="deck" fitHeight="88.0" fitWidth="55.0" layoutX="99.0" layoutY="94.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/img/cardBack.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="slidOr" fitHeight="42.0" fitWidth="55.0" layoutX="328.0" layoutY="340.0" pickOnBounds="true" rotate="180.0">
+         <image>
+            <Image url="@../assets/img/csm_ornament9_e76919f620.png" />
+         </image>
+         <rotationAxis>
+            <Point3D y="1.0" />
+         </rotationAxis>
+         <effect>
+            <GaussianBlur radius="0.5" />
+         </effect>
+      </ImageView>
+   </children>
+</Pane>
